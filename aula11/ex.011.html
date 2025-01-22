@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+            color: antiquewhite;
+        }
+        h1 {
+            color: crimson;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual é a sua nacionalidade?</h1>
+    País: <input type="text" name="nac" id="nac" placeholder="Escreva aqui">
+    <input type="button" value="verificar" onclick="clicar()" id="ver">
+    <div id="res"></div>
+
+    <script>
+        function clicar() {
+            var txtnac = window.document.querySelector('input#nac').value
+            var res = window.document.querySelector('div#res')
+            var ver = window.document.querySelector('input#ver')
+          res.innerHTML = `Você vive em ${txtnac}.`
+
+          if (txtnac == 'Brasil' || 'brasil') {
+            res.innerHTML += `<p>Você é brasileiro.</p>`
+          }
+          else {
+            res.innerHTML += `<p>Você é estrangeiro.</p>`
+          }
+
+        }
+    </script>
+    
+</body>
+</html>
