@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h1 {
+    color: rgb(88, 88, 88);
+}
+
+section {
+ background-color: beige;
+ border-radius: 5px;
+ padding: 15px;
+ width: 500px;
+ margin: auto;
+ box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.203);
+}
+
+footer {
+    font-style: italic;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov</title>
+
+    <style>       
+       
+        body {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <h1>Preciso votar?</h1>
+    
+    Idade: <input type="number" name="idade1" id="idade1" placeholder="Insira sua idade aqui">
+    <input type="button" value="verificar" id="verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script> 
+        function clicar() {
+            var idade = window.document.querySelector('input#idade1').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Você tem ${idade} anos.`
+            
+        
+
+            if (idade < 16) {
+            res.innerHTML += `<p>Não vota.</p>`
+
+        } else if (idade < 18) {
+            res.innerHTML += `<p>Voto opcional.</p>` 
+        } 
+        else {
+            res.innerHTML += `<p>Voto obrigatório.</p>`
+        }
+    }
+
+       
+
+    </script>
+</body>
+</html>
