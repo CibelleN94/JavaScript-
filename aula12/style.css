@@ -1,7 +1,7 @@
 
 body {
     
-    background-color:rgb(95, 158, 160);
+    background-color:rgb(184, 129, 78);
     
 }
 h1 {
@@ -11,8 +11,8 @@ h1 {
 section {
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(245, 245, 220, 0.438);
-    width: 500px;
+    background-color: beige;
+    width: 400px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.39);
