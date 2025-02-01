@@ -1,0 +1,31 @@
+function clicar () {
+    let tabu = document.querySelector('input#tab')
+    let tabsel = document.querySelector('select#seltab')
+   
+    
+    if (tabu.value.lenght == 0)
+    {
+      window.alert ('Preencha corretamente.')
+    } else {
+      let n = Number(tabu.value)
+      let c = 1 
+         tabsel.innerHTML = ''
+      while (c <= 10) {
+        let item = document.createElement('option')
+
+        item.text += `${n} x ${c} = ${n*c}`
+        item.value = `tabu ${c}`
+        tabu.appendChild(item)
+        c++
+
+      }
+
+    }
+      }
+       
+  
+
+ 
+    
+    
+    
