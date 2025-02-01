@@ -1,0 +1,23 @@
+body {
+    background-color: #816a97;
+        
+}
+section {
+    margin: auto;
+    background-color: beige;
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.228);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
